@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
+        <body suppressHydrationWarning={true} className={inter.className}>
           <Header />
           {children}
         </body>
