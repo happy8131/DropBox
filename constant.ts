@@ -21,4 +21,6 @@ export const COLOR_EXTENSION_MAP: { [key: string]: string } = {
   wma: "#000000",
   svg: "#000000",
   exe: "#000000",
+  psd: "#000000",
+  ai: "#000000",
 };

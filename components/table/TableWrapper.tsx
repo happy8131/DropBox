@@ -38,7 +38,7 @@ function TableWrapper({ skeletonFiles }: { skeletonFiles: FileType[] }) {
     setInitialFiles(files);
   }, [docs]);
 
-  if (docs?.docs.length === undefined)
+  if (docs?.docs.length === undefined) {
     return (
       <div className="flex flex-col">
         <Button variant={"outline"} className="ml-auto w-36 h-10 mb-5">
@@ -66,19 +66,20 @@ function TableWrapper({ skeletonFiles }: { skeletonFiles: FileType[] }) {
         </div>
       </div>
     );
+  } else {
+    return (
+      <div className="flex flex-col space-y-5 pb-10">
+        <Button
+          onClick={() => setSort(sort === "desc" ? "asc" : "desc")}
+          className="ml-auto w-fit"
+        >
+          Sort By {sort === "desc" ? "Newest" : "Oldest"}
+        </Button>
 
-  return (
-    <div className="flex flex-col space-y-5 pb-10">
-      <Button
-        onClick={() => setSort(sort === "desc" ? "asc" : "desc")}
-        className="ml-auto w-fit"
-      >
-        Sort By {sort === "desc" ? "Newest" : "Oldest"}
-      </Button>
-
-      <DataTable columns={columns} data={initialFiles} />
-    </div>
-  );
+        <DataTable columns={columns} data={initialFiles} />
+      </div>
+    );
+  }
 }
 
 export default TableWrapper;

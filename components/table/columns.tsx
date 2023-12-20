@@ -16,9 +16,9 @@ export const columns: ColumnDef<FileType>[] = [
     cell: ({ renderValue, ...props }) => {
       const type = renderValue() as string;
       const extension: string = type.split("/")[1];
+
       return (
-        <div>
-          {" "}
+        <div className="w-10">
           <FileIcon
             extension={extension}
             labelColor={COLOR_EXTENSION_MAP[extension]}
