@@ -14,24 +14,20 @@ pnpm dev
 bun dev
 ```
 
-https://dropbox-ashy.vercel.app/
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+파일 저장하는 DropBox
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ [the Next.js GitHub repository]([https://github.com/vercel/next.js/](https://dropbox-ashy.vercel.app/)-
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 사용법
 
-## Deploy on Vercel
+![ezgif com-animated-gif-maker (1)](https://github.com/happy8131/DropBox/assets/70251881/ff25d238-fb00-4169-a974-24d55441890a)
+화면 우측 상단에 Sign in 클릭
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![ezgif com-animated-gif-maker](https://github.com/happy8131/DropBox/assets/70251881/e5747267-47ab-4e84-a55c-071bb2b79e74)
+
+클릭해서 파일을 업로드 해주세요 부분을 클릭하거나 업로드할 파일을 드래그하시면 업로드가 됩니다
