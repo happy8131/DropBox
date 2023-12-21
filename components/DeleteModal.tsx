@@ -37,8 +37,6 @@ export function DeleteModal() {
     try {
       await deleteObject(fileRef).then(async () => {
         deleteDoc(doc(db, "users", user.id, "files", fileId)).then(() => {
-          console.log("삭제!");
-
           toast.success("삭제 성공", {
             id: toastId,
           });

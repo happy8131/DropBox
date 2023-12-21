@@ -16,7 +16,7 @@ interface AppState {
 
 export const useAppStor = create<AppState>()((set) => ({
   fileId: null,
-  setFileId: (fileId: string) => set(() => ({ fileId })),
+  setFileId: (fileId: string) => set((state) => ({ fileId })),
 
   filename: "",
   setFilename: (filename: string) => set((state) => ({ filename })),

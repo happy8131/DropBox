@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
 import { Toaster } from "react-hot-toast";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,10 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" className="h-screen">
         <body suppressHydrationWarning={true} className={inter.className}>
           <Header />
           {children}
+
           <Toaster position="bottom-center" />
         </body>
       </html>

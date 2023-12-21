@@ -96,11 +96,13 @@ function Dropzone() {
               )}
             >
               <input {...getInputProps()} />
-              {!isDragActive && "Click here or drop a file to upload!"}
-              {isDragActive && !isDragReject && "Drop to upload this file!"}
-              {isDragReject && "File type not accepted, sorry!"}
+              {!isDragActive && "클릭해서 파일을 업로드 해주세요!"}
+              {isDragActive && !isDragReject && "파일이 올려져 있습니다."}
+              {isDragReject && "허용되는 파일이 아닙니다!"}
               {isFileTooLarge && (
-                <div className="text-danger mt-2">File is too large.</div>
+                <div className="text-danger mt-2">
+                  파일 용량을 초과 했습니다.
+                </div>
               )}
             </div>
           </section>
