@@ -20,7 +20,7 @@ bun dev
 
 파일 저장하는 DropBox
 
- [the Next.js GitHub repository]([https://github.com/vercel/next.js/](https://dropbox-ashy.vercel.app/)-
+(https://dropbox-ashy.vercel.app/)
 
 ## 사용법
 
