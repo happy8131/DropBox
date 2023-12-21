@@ -24,7 +24,7 @@ async function Dashboard() {
       <Dropzone />
 
       <section className="container space-y-5">
-        <h2 className="font-bold">All Files</h2>
+        <h2 className="font-bold">모든 파일</h2>
 
         <div>
           <TableWrapper skeletonFiles={skeletonFiles} />

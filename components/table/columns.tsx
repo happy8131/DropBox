@@ -12,7 +12,7 @@ import { COLOR_EXTENSION_MAP } from "@/constant";
 export const columns: ColumnDef<FileType>[] = [
   {
     accessorKey: "type",
-    header: "Type",
+    header: "타입",
     cell: ({ renderValue, ...props }) => {
       const type = renderValue() as string;
       const extension: string = type.split("/")[1];
@@ -31,22 +31,22 @@ export const columns: ColumnDef<FileType>[] = [
   },
   {
     accessorKey: "filename",
-    header: "Filename",
+    header: "파일이름",
   },
   {
     accessorKey: "timestamp",
-    header: "Date Added",
+    header: "업로딩한 날짜",
   },
   {
     accessorKey: "size",
-    header: "Size",
+    header: "크기",
     cell: ({ renderValue, ...props }) => {
       return <span>{prettyBytes(renderValue() as number)}</span>;
     },
   },
   {
     accessorKey: "downloadURL",
-    header: "Link",
+    header: "링크",
     cell: ({ renderValue, ...props }) => (
       <a
         href={renderValue() as string}
